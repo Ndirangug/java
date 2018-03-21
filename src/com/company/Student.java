@@ -23,6 +23,6 @@ public class Student {
         Student mutavi = new Student("Mutavi", 8741534);
         ndanu.display();
         mutavi.display();
-        
+
     }
 }
