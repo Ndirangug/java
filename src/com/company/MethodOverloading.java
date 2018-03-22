@@ -9,7 +9,7 @@ public class MethodOverloading {
     * 2.Data type of parametres
     * 3.Sequence of parametrs*/
 
-    //based on number of parameters
+    //overloading based on number of parameters
     public void print(char d){
         System.out.println(d);
     }
@@ -20,9 +20,26 @@ public class MethodOverloading {
 
     }
 
+    public void print(int age){
+        if (age < 18){
+            System.out.println("Not yet legal");
+        }else {
+            System.out.println("Welcome to AdultHood");
+        }
+    }
+
+    //overloading based on datatypes
+    public void print(String location, int num){
+        System.out.println("First Definition");
+    }
+
+    public void print(int num, String location){
+        System.out.println("Second definition");
+    }
+
     public static void main(String[] args) {
         //Class name objectName = new Classname();
         MethodOverloading overload = new MethodOverloading();
-        overload.print('A', "George");
+        overload.print(18);
     }
 }
