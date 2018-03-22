@@ -25,7 +25,7 @@ public class Calculator {
     }
 
     public static void main(String[] args) {
-        
+
 
         for (int carryOn = 0; carryOn == 0;  carryOn = JOptionPane.showConfirmDialog(null,"Do you wish to perform another calculation?(yes/no)")) {
             double a = Double.parseDouble(JOptionPane.showInputDialog("Enter your first value"));
